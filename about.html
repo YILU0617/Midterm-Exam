@@ -1,0 +1,51 @@
+<!-- TCP Handshake: When users try to access a website, they first need to establish a TCP connection. This involves a three-way handshake process: the client sends a SYN, the server replies with a SYN-ACK, and then the client replies with an ACK.
+
+HTTP Request: Once the TCP connection is established, the browser (client) sends an HTTP request to the server requesting the contents of the about.html page.
+
+Server processing: The server will process the request, looking for the about.html file.
+
+HTTP response: When the server finds the file, it sends its contents back to the client as an HTTP response. If the file does not exist, the server may send a 404 error response.
+
+Closing the connection: After the transfer is complete, the connection may be closed, or it may remain open in the case of a continuous connection.
+
+Display content: When the client's browser receives the response, it parses and displays the content of about.html.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Pancake De Lira</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="header">
+    <h1 class="textlogo">Pancake De Lira</h1>
+    <h2>Web Developer & Best Guinea Pig</h2>
+</div>
+
+<div id="nav">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact me</a></li>
+    </ul>
+</div>
+
+<div id="container">
+    <div id="main">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vulputate purus placerat lorem viverra ultrices. Nulla vulputate leo magna, at pellentesque risus faucibus sit amet. Quisque sed tincidunt purus, nec dignissim ipsum. Praesent malesuada libero neque, quis dignissim lorem hendrerit quis. Phasellus sed tellus id orci aliquet mattis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse consectetur felis lorem, at cursus nulla mollis et.</p>
+
+        <p>Quisque a viverra sem. Suspendisse cursus cursus nibh, eu sollicitudin risus pharetra nec. Nam eget eros vulputate, imperdiet ex nec, eleifend mauris. In tincidunt, odio vel porta vehicula, ligula nibh congue nibh, eu viverra dui nibh sed urna. Vestibulum egestas, nulla ac tempus mollis, lorem dui auctor metus, et pellentesque dolor justo placerat massa. Nulla ac ullamcorper odio. Maecenas tincidunt felis quis diam gravida, eget imperdiet est aliquet. Quisque quis est sed erat dignissim dictum.</p>
+
+        <p>Aliquam ac nulla id metus sollicitudin consectetur nec a erat. Pellentesque sed viverra dolor, et viverra nunc. Integer egestas consectetur hendrerit. Praesent aliquet a tortor a aliquet. Integer laoreet justo in ipsum iaculis efficitur. Curabitur at velit et risus efficitur porta. Vestibulum porta venenatis ultrices. Etiam vitae mattis erat. Nam tempor pulvinar sem quis scelerisque. Nam quis rhoncus tortor. In sit amet mi mi. Duis iaculis elit ut ultricies fermentum. Mauris bibendum enim nunc, vel dapibus ligula viverra ut. Ut leo justo, maximus sed nibh eu, scelerisque tincidunt mauris.</p>
+    </div>
+    <div id="aside">
+        <img src="resources\images\aboutImg.jpg" alt="About Me Image of Pancake" class="aboutprofile">
+    </div>
+</div>
+
+</body>
+</html>
